@@ -1,7 +1,7 @@
 //SETUP canvas
 const canvas = document.querySelector("#canvas1");
 canvas.width = 1000;
-canvas.height = 400;
+canvas.height = 600;
 let context = canvas.getContext("2d");
 
 
@@ -70,6 +70,7 @@ function draw() {
 
 // MAKE EACH LINE FUNCTION
 function makeLine (x1, y1, x2, y2) {
+	context.strokeStyle = "#FFFFFF";
 	context.beginPath();
 	context.moveTo(x1, y1);
 	context.lineTo(x2, y2);
