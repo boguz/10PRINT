@@ -10,7 +10,7 @@ let xpos = 0;
 let ypos = 0;
 let size = 20;
 let threshold = 0.5;
-let speed = 50;
+let speed = 100;
 
 
 // SIZE SLIDER
@@ -46,11 +46,15 @@ function resetDraw() {
 	xpos = 0;
 	ypos = 0;
 	draw();
+	clearInterval(drawInterval);
+	drawInterval = setInterval(draw, speed);
 }
 
 
 // DRAW FUNCTION
 function draw() {
+	console.log(speed);
+
 	let a = Math.random();
 	
 	if ( a < threshold ) {
@@ -79,6 +83,6 @@ function makeLine (x1, y1, x2, y2) {
 
 
 // SET INTERVAL
-setInterval(function(speed){
-		draw();
+let drawInterval = setInterval(function(){
+	draw();
 }, speed);
