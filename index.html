@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>10PRINT</title>
+	<link href="10print.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+	<div class="container">
+	
+		<div class="controls">
+			<div id="c-size" class="control">
+				<div class="label">Size:</div>
+				<input id="size-slider" class="ctr-slider" type="range" value="20" min="10" max="80" step="1">
+			</div>
+			
+			<div id="c-speed" class="control">
+				<div class="label">Speed:</div>
+				<input id="speed-slider" class="ctr-slider" type="range" value="50" min="10" max="2000" step="10">
+			</div>
+			
+			<div id="c-balance" class="control">
+				<div class="label">Balance:</div>
+				<input id="balance-slider" class="ctr-slider" type="range" value="0.5" min="0" max="1" step="0.05">
+			</div>
+		</div>
+		
+		<canvas id="canvas1"></canvas>
+		
+	</div>
+		
+	<script src="10print.js" type="application/javascript"></script>
+
+</body>
+
+
+</html>
