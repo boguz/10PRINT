@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<meta charset="utf-8">
 	<title>10PRINT</title>
-	<link href="10print.css" rel="stylesheet">
-</head>
 
+	<meta name="description" content="Example of the 10 PRINT code line">
+	<meta name="author" content="Boguz">
+
+	<link href="10print.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900|VT323" rel="stylesheet">
+</head>
 
 <body>
 
+	<!-- CONTAINER -->
 	<div class="container">
 	
+		<!-- INFO BANNER -->
+		<div class="info">
+		
+			<h1 class="title">10 PRINT</h1>
+			
+			<!-- DESCRIPTION AND LINK -->
+			<div class="about">
+				<p class="desc">"10 print chr$(205.5+rnd(1)) goto 10" is a famous line of code (in BASIC) which produces very interesting maze-like designs. I decided to make my own version of it, using HTML, CSS and JS as a way to improve my skills.</p>
+
+				<a href="https://github.com/boguz/10PRINT" class="cta">read more on Github</a>
+			</div> <!-- end .about -->
+		</div> <!-- end .info -->
+	
+		<!-- CONTROLS -->
 		<div class="controls">
 			<div id="c-size" class="control">
 				<div class="label">Size:</div>
@@ -28,13 +48,17 @@
 			</div>
 		</div>
 		
+		<!-- CANVAS -->
 		<canvas id="canvas1"></canvas>
 		
-	</div>
-		
+	</div> <!-- end of .container -->
+	
+	<!-- FOOTER -->
+	<div class="footer">
+		<p>made with love by <a href="https://github.com/boguz" target="_blank">Boguz</a>. You can read more about this project <a href="https://github.com/boguz/10PRINT" target="_blank">here</a>.  =D</p>
+	</div> <!-- end .footer -->
+	
+	<!-- LINK TO JS FILE -->	
 	<script src="10print.js" type="application/javascript"></script>
-
 </body>
-
-
 </html>
