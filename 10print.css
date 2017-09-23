@@ -6,7 +6,7 @@
 }
 
 body{
-	background-color: #C0392B;
+	background-color: rgb(158, 70, 62);
 	min-height: 100vh;
 }
 
@@ -73,7 +73,7 @@ a.cta:focus {
 #canvas1 {
 	height: 600px;
 	width: 100%;
-	background-color: #C0392B;
+	background-color: rgb(158, 70, 62);
 }
 
 .controls {
